@@ -59,7 +59,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <span>&copy; 2020 twtwtw-gj</span>
     </v-footer>
   </v-app>
 </template>
