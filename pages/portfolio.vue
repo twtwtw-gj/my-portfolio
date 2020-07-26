@@ -24,9 +24,13 @@
             <v-list-item-title>Docker, Kubernete</v-list-item-title>
             <v-list-item-title>AWS</v-list-item-title>
             <v-list-item-title>統計・機械学習</v-list-item-title>
-            <v-list-item-title>自作コンパイラ・自作Wikiエンジン</v-list-item-title>
+            <v-list-item-title
+              >自作コンパイラ・自作Wikiエンジン</v-list-item-title
+            >
             <v-list-item-title>関数型言語</v-list-item-title>
-            <v-list-item-title>数学基礎論とプログラミングを絡めて何かする感じのやつ</v-list-item-title>
+            <v-list-item-title
+              >数学基礎論とプログラミングを絡めて何かする感じのやつ</v-list-item-title
+            >
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -66,7 +70,8 @@ const languageList = [
   },
   {
     language: 'JavaScript（Node.js, Vue.js, React.js）',
-    comment: '仕事では使っていたが、オブジェクト指向（ES5以前のやつ）がわかりにくいのと、デザイン能力に自信がないので1人でやるのは心もとない'
+    comment:
+      '仕事では使っていたが、オブジェクト指向（ES5以前のやつ）がわかりにくいのと、デザイン能力に自信がないので1人でやるのは心もとない',
   },
 ]
 
