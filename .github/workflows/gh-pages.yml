@@ -14,8 +14,8 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Yarn
-        uses: peaceiris/actions-hugo@v2
-
+        uses: actions/setup-node@v2
+        
       - name: Build
         run: yarn build:gh-pages
         
