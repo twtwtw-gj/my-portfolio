@@ -14,13 +14,16 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Yarn
-        uses: actions/setup-node@v2
-        
+        uses: actions/setup-node@v1
+
+      - name: Install
+        run: yarn install
+
       - name: Build
         run: yarn build:gh-pages
-        
-      - name: Exports
-        run: yarn exports:gh-pages
+
+      - name: Export
+        run: yarn export:gh-pages
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
