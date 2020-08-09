@@ -71,7 +71,7 @@ const languageList = [
   {
     language: 'JavaScript（Node.js, Vue.js, React.js）',
     comment:
-      '仕事では使っていたが、オブジェクト指向（ES5以前のやつ）がわかりにくいのと、デザイン能力に自信がないので1人でやるのは心もとない',
+      '仕事で使っていた。一番好きなのはVue.jsとNuxt.js',
   },
 ]
 
