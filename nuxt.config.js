@@ -1,8 +1,8 @@
 import colors from 'vuetify/es5/util/colors'
 
-// `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
+// `NODE_ENV` が `production` の場合のみ `router.base = '/<repository-name>/'` を追加する
 const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
+  process.env.NODE_ENV === 'production'
     ? {
         router: {
           base: '/my-portfolio/',
