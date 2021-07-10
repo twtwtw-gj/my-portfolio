@@ -19,6 +19,13 @@ jobs:
             check-latest: true
             cache: 'yarn'
 
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cache
+            ./public
+
       - name: Install
         run: yarn install
 
