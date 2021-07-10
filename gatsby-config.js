@@ -5,6 +5,7 @@ module.exports = {
     author: `twtwtw-gj`,
   },
   plugins: [
+    `gatsby-theme-material-ui`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
