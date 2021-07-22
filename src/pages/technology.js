@@ -1,12 +1,11 @@
-import * as React from "react"
+import * as React from 'react';
 
 import { useTable } from 'react-table';
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from '../components/layout';
+import Seo from '../components/seo';
 
 const TechPage = () => {
-  
   const data = React.useMemo(
     () => [
       {
@@ -36,7 +35,7 @@ const TechPage = () => {
       },
     ],
     []
-  )
+  );
 
   const columns = React.useMemo(
     () => [
@@ -50,15 +49,9 @@ const TechPage = () => {
       },
     ],
     []
-  )
+  );
 
-  const {
-    getTableProps,
-    getTableBodyProps,
-    headerGroups,
-    rows,
-    prepareRow,
-  } = useTable({ columns, data })
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = useTable({ columns, data });
 
   return (
     <Layout>
