@@ -1,4 +1,8 @@
 {
     "javascript.format.enable": false,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "eslint.codeAction.showDocumentation": {
+    
+        "enable": true
+    }
 }
