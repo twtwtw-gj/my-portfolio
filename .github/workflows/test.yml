@@ -7,7 +7,7 @@ on:
       - fix/**
 
 jobs:
-  deploy:
+  unit test:
     runs-on: ubuntu-latest
     env:
       TZ: 'Asia/Tokyo'
