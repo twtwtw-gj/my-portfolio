@@ -3,10 +3,11 @@ name: github pages
 on:
   push:
     branches:
-      - master
+      - feature/**
+      - fix/**
 
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
     env:
       TZ: 'Asia/Tokyo'
@@ -32,11 +33,5 @@ jobs:
       - name: Install
         run: yarn install
 
-      - name: Build
-        run: yarn build --prefix-paths
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+      - name: Test
+        run: yarn test
