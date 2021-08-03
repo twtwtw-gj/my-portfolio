@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table renders correctly 1`] = `
+<table
+  role="table"
+>
+  <thead />
+  <tbody
+    role="rowgroup"
+  />
+</table>
+`;
+
+exports[`Table renders correctly with data 1`] = `
+<table
+  role="table"
+>
+  <thead>
+    <tr
+      role="row"
+    >
+      <th
+        colSpan={1}
+        role="columnheader"
+      >
+        Col1
+      </th>
+      <th
+        colSpan={1}
+        role="columnheader"
+      >
+        Col2
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    role="rowgroup"
+  >
+    <tr
+      role="row"
+    >
+      <td
+        role="cell"
+      >
+        1-col1
+      </td>
+      <td
+        role="cell"
+      >
+        1-col2
+      </td>
+    </tr>
+    <tr
+      role="row"
+    >
+      <td
+        role="cell"
+      >
+        2-col1
+      </td>
+      <td
+        role="cell"
+      >
+        2-col2
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
