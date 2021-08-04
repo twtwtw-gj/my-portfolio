@@ -21,6 +21,7 @@ const IndexPage = () => (
     <p>
       <Link to="/profile/">Go to profile</Link> <br />
       <Link to="/skill/">Go to skill sheet</Link> <br />
+      <Link to="/site/">Go to the page how to make this site</Link> <br />
     </p>
   </Layout>
 );
