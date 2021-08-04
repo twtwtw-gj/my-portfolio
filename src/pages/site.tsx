@@ -7,22 +7,46 @@ import Seo from '../components/seo';
 
 const Site: React.FC<PageProps> = () => {
   const data = [
-    { name: <a href="https://github.com">GitHub</a>, description: <>git repositoryのホスティングサイト。コードへのリンクは<a href="https://github.com/twtwtw-gj/my-portfolio">こちら</a></> },
+    {
+      name: <a href="https://ja.reactjs.org/">React.js</a>,
+      description: 'JavaScriptフレームワーク。関数型プログラミングが特徴的',
+    },
+    {
+      name: <a href="https://www.gatsbyjs.com/">Gatsby.js</a>,
+      description: '上記を使用したSSG（静的サイトジェネレーター）',
+    },
     {
       name: <a href="https://gitpod.io">Gitpod</a>,
-      description: 'クラウドで開発環境を整えられるサービス',
+      description:
+        'クラウドで開発環境を整えられるサービス。本サイトはローカルの開発環境は一切使わず、このサービス上のみでコーディングした',
+    },
+    {
+      name: <a href="https://github.com">GitHub</a>,
+      description: (
+        <>
+          git repositoryのホスティングサイト。コードへのリンクは
+          <a href="https://github.com/twtwtw-gj/my-portfolio">こちら</a>
+        </>
+      ),
+    },
+    {
+      name: <a href="https://github.co.jp/features/actions">GitHub Actions</a>,
+      description: 'GitHubにコードを上げると、自動的にテストや成果物のビルドを行うサービス',
+    },
+    {
+      name: <a href="https://pages.github.com/">GitHub Pages</a>,
+      description: 'GitHubにpushしたHTMLファイルをもとに、自動的にサイトを作成・公開するサービス',
     },
   ];
 
   return (
     <Layout>
-      <Seo title="サイトの作成方法" />
-      <h1>このサイトの作成方法</h1>
-      <p>
-        <p>本サイトの作成で使用したサービスをご紹介いたします。</p>
+      <Seo title="サイトの作成に使用したサービス" />
+      <h1>本サイトの作成に使用したサービス</h1>
+      <div>
         <p>
-          原則的にすべてのサービスが無料で使えますが、いくつか制限があるものもあります。
-          （たとえば、Gitpodは無料ユーザーは月50時間しか使用できません）
+          原則的にすべてのサービスが無料で使えますが、いくつか制限があるものもあります。 （たとえば、{' '}
+          <a href="https://gitpod.io">Gitpod</a>は無料ユーザーは月50時間しか使用できません）
         </p>
         <dl>
           {data.map(({ name, description }) => (
@@ -32,7 +56,7 @@ const Site: React.FC<PageProps> = () => {
             </>
           ))}
         </dl>
-      </p>
+      </div>
       <Link to="/">Go back to the homepage</Link>
     </Layout>
   );

@@ -26,21 +26,31 @@ const SkillPage = ({
             description: '最初に習得した言語',
           },
           {
-            name: 'Ruby',
-            description: '動かしていて楽しい言語',
-          },
-          {
             name: 'Python',
             description: '軽いスクリプトを書くときによく使う言語',
           },
           {
-            name: 'Java',
-            description: '業務でよく使う言語',
+            name: 'Ruby',
+            description: '動かしていて楽しい言語',
+          },
+          {
+            name: 'Perl',
+            description:
+              '決して嫌いというわけではないが、あまりimmutableなコード執筆がしにくいことがあり、よいスクリプトを組む自信がいまひとつない',
           },
           {
             name: 'Haskell',
             description:
-              'もともと数学よりの言語なので勉強していて困りはしなかった。また、これの学習によって圏論に興味を持った',
+              'もともと数学よりの言語なので勉強していて困りはしなかった。ラムダ計算を模した記法は非常に気に入っている',
+          },
+          {
+            name: 'Java',
+            description:
+              '業務でよく使う言語。Spring bootフレームワークはパッケージひとつで色々なことが出来るので気に入っている',
+          },
+          {
+            name: 'JavaScript',
+            description: 'Vue.js, React.js, Node.jsでのサーバー立ち上げなら出来る',
           },
           {
             name: 'Lisp',
@@ -60,8 +70,9 @@ const SkillPage = ({
             description: 'jsCoqを使ってCoq勉強中',
           },
           {
-            name: 'K8s',
-            description: 'マイクロサービスシステム自体には開発に携わったことがあったが、複数のサーバーを逐一置き換えるのは非常に煩雑だった。オーケストレーションの使用である程度デプロイ作業がラクになるのではと期待している',
+            name: <a href="https://kubernetes.io/">kubernetes(k8s)</a>,
+            description:
+              'マイクロサービスシステム自体には開発に携わったことがあったが、複数のサーバーを逐一置き換えるのは非常に煩雑だった。オーケストレーションの使用である程度デプロイ作業がラクになるのではと期待している',
           },
         ]}
       />
