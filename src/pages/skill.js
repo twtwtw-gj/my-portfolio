@@ -5,6 +5,7 @@ import { DateTime } from 'luxon';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 import Table from '../components/table';
+import ExternalLink from '../components/externalLink';
 
 const SkillPage = ({
   data: {
@@ -66,11 +67,15 @@ const SkillPage = ({
         ]}
         data={[
           {
+            name: '関数型プログラミング',
+          },
+          { name: '数学基礎論' },
+          {
             name: '自動定理証明・証明支援システム',
-            description: 'jsCoqを使ってCoq勉強中',
+            description: <>{ExternalLink({ text: 'jsCoq', url: 'https://coq.vercel.app/' })}を使ってCoq勉強中,</>,
           },
           {
-            name: <a href="https://kubernetes.io/">kubernetes(k8s)</a>,
+            name: <ExternalLink text="kubernetes(k8s)" url="https://kubernetes.io/" />,
             description:
               'マイクロサービスシステム自体には開発に携わったことがあったが、複数のサーバーを逐一置き換えるのは非常に煩雑だった。オーケストレーションの使用である程度デプロイ作業がラクになるのではと期待している',
           },
