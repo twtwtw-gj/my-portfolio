@@ -24,10 +24,12 @@ jobs:
       - name: Cache
         uses: actions/cache@v2        
         with:
-          key: "build"
           path: |
             ~/.cache
             ./public
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
       - name: Install
         run: yarn install
