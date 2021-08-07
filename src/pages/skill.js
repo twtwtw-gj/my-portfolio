@@ -15,7 +15,8 @@ const SkillPage = ({
   return (
     <Layout>
       <Seo title="Skill" />
-      <h2>今まで習得した言語</h2>
+      <h1>my skill</h1>
+      <h2>習得した言語</h2>
       <Table
         columns={[
           { Header: '言語名', accessor: 'name' },
