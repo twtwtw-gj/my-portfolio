@@ -47,7 +47,7 @@ const Site: React.FC<PageProps> = () => {
 
   return (
     <Layout>
-      <Seo title="サイトの作成に使用したサービス" />
+      <Seo title="Services which help me make this site" />
       <h1>本サイトの作成に使用したサービス</h1>
       <div>
         <p>
