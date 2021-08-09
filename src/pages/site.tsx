@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { PageProps, Link } from 'gatsby';
+import { PageProps } from 'gatsby';
 
 import Layout from '../components/layout';
 import Seo from '../components/seo';
