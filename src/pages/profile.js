@@ -14,8 +14,6 @@ const ProfilePage = ({ location }) => (
     <br />
     <p>大学・大学院では数学を学んでおりました。特に代数学・数学基礎論・集合論あたりを専攻していました。</p>
     <p>数学（数学基礎論・数理論理学）・プログラミング言語・ソフトウェア開発に興味を持っています。</p>
-    <br />
-    {/* <Link to="/">Go back to the homepage</Link> */}
   </Layout>
 );
 

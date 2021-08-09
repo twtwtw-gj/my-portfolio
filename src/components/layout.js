@@ -7,7 +7,7 @@
 
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql, Link, withPrefix } from 'gatsby';
 
 import Header from './header';
 import './layout.css';
@@ -37,7 +37,7 @@ const Layout = ({ children, location }) => {
         <main>
           {children}
           {<br />}
-          {'/' == location.pathname || <Link to="/">Go back to the homepage</Link>}
+          {withPrefix('/') == location.pathname || <Link to="/">Go back to the homepage</Link>}
         </main>
         <footer
           style={{
