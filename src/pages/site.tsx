@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 import Seo from '../components/seo';
 import ExternalLink from '../components/externalLink';
 
-const Site: React.FC<PageProps> = () => {
+const Site: React.FC<PageProps> = ({ location }) => {
   const data = [
     {
       name: 'React.js',
@@ -46,7 +46,7 @@ const Site: React.FC<PageProps> = () => {
   ];
 
   return (
-    <Layout>
+    <Layout location={location}>
       <Seo title="Services which help me make this site" />
       <h1>本サイトの作成に使用したサービス</h1>
       <div>
@@ -63,7 +63,6 @@ const Site: React.FC<PageProps> = () => {
           ))}
         </dl>
       </div>
-      <Link to="/">Go back to the homepage</Link>
     </Layout>
   );
 };

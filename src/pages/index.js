@@ -8,8 +8,8 @@ import Avatar from 'react-avatar';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = ({ location }) => (
+  <Layout location={location}>
     <Seo title="Home" />
     <h1>Hi people</h1>
     <Avatar githubHandle="twtwtw-gj" />

@@ -8,12 +8,13 @@ import Table from '../components/table';
 import ExternalLink from '../components/externalLink';
 
 const SkillPage = ({
+  location,
   data: {
     site: { buildTime },
   },
 }) => {
   return (
-    <Layout>
+    <Layout location={location}>
       <Seo title="Skill" />
       <h1>my skill</h1>
       <h2>習得した言語</h2>
