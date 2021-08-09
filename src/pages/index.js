@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import Avatar from 'react-avatar';
 
 import Layout from '../components/layout';
 import Seo from '../components/seo';
@@ -11,6 +12,7 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <h1>Hi people</h1>
+    <Avatar githubHandle="twtwtw-gj" />
     <div>
       <a href="https://github.com/twtwtw-gj/">
         <FontAwesomeIcon icon={faGithub} style={{ width: 24, height: 24 }} />
