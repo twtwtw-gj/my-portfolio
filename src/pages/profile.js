@@ -5,7 +5,7 @@ import Seo from '../components/seo';
 
 const ProfilePage = ({ location }) => (
   <Layout location={location}>
-    <Seo title="profile" />
+    <Seo title="Profile" />
     <h1>プロフィール</h1>
     <p>twtwtw-gjです。</p>
     <p>日本・東京・多摩地域に住んでいます</p>
