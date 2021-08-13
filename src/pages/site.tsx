@@ -15,7 +15,7 @@ const Site: React.FC<PageProps> = ({ location }) => {
     {
       name: 'Gatsby.js',
       url: 'https://www.gatsbyjs.com/',
-      description: '上記を使用したSSG（静的サイトジェネレーター）',
+      description: '上記を使用したSSG（静的サイトジェネレーター）。特にページ遷移の機能追加をしやすく、React Routerをそのまま使うより遥かに簡単',
     },
     {
       name: 'Gitpod',
