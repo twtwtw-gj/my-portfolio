@@ -41,7 +41,8 @@ const Site: React.FC<PageProps> = ({ location }) => {
     {
       name: 'GitHub Pages',
       url: 'https://pages.github.com/',
-      description: 'GitHubにpushしたHTMLファイルをもとに、自動的にサイトを作成・公開するサービス',
+      description:
+        'GitHubにpushしたHTMLファイルをもとに、自動的にサイトを作成・公開するサービス。今回は使用しなかったが、独自ドメインで公開することも可能',
     },
   ];
 
@@ -52,12 +53,13 @@ const Site: React.FC<PageProps> = ({ location }) => {
       <div>
         <p>
           原則的にすべてのサービスが無料で使えますが、いくつか制限があるものもあります。 （たとえば、
-          {ExternalLink({ text: 'Gitpod', url: 'https://www.gitpod.io' })}は無料ユーザーは月50時間しか使用できません）
+          <ExternalLink text="Gitpod" url="https://www.gitpod.io" />
+          は無料ユーザーは月50時間しか使用できません）
         </p>
         <dl>
           {data.map(({ name, url, description }) => (
             <>
-              <dt>{url ? ExternalLink({ text: name, url }) : name}</dt>
+              <dt>{url ? <ExternalLink text={name} url={url} /> : name}</dt>
               <dd>{description}</dd>
             </>
           ))}
