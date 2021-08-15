@@ -61,7 +61,7 @@ const Site: React.FC<PageProps> = ({ location }) => {
           は無料ユーザーは月50時間しか使用できません）
         </p>
         <h3>開発で使用したもの</h3>
-        JavaScriptフレームワーク・サイトジェネレータ・開発環境の確保手段
+        JavaScriptフレームワーク・サイトジェネレータ・開発環境の構築手段
         <dl>
           {servicesToDevelop.map(({ name, url, description }) => (
             <>
