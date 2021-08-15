@@ -14,7 +14,7 @@ const IndexPage = ({ location }) => (
     <h1>Hi people</h1>
     <Avatar githubHandle="twtwtw-gj" />
     <div>
-      <a href="https://github.com/twtwtw-gj/">
+      <a href="https://github.com/twtwtw-gj/" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGithub} style={{ width: 24, height: 24 }} />
         Please check my works.
       </a>
