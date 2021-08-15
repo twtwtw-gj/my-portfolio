@@ -37,7 +37,7 @@ const Layout = ({ children, location }) => {
         <main>
           {children}
           {<br />}
-          {withPrefix('/') == location.pathname || <Link to="/">Go back to the homepage</Link>}
+          {withPrefix('/') == location.pathname && <Link to="/">Go back to the homepage</Link>}
         </main>
         <footer
           style={{
