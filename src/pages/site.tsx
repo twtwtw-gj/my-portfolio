@@ -6,7 +6,7 @@ import Seo from '../components/seo';
 import ExternalLink from '../components/externalLink';
 
 const Site: React.FC<PageProps> = ({ location }) => {
-  const data = [
+  const servicesToDevelop = [
     {
       name: 'React.js',
       url: 'https://ja.reactjs.org/',
@@ -15,7 +15,8 @@ const Site: React.FC<PageProps> = ({ location }) => {
     {
       name: 'Gatsby.js',
       url: 'https://www.gatsbyjs.com/',
-      description: '上記を使用したSSG（静的サイトジェネレーター）。特にページ遷移の機能追加をしやすく、React Routerをそのまま使うより遥かに簡単',
+      description:
+        '上記を使用したSSG（静的サイトジェネレーター）。特にページ遷移の機能追加をしやすく、React Routerをそのまま使うより遥かに簡単',
     },
     {
       name: 'Gitpod',
@@ -23,6 +24,9 @@ const Site: React.FC<PageProps> = ({ location }) => {
       description:
         'クラウドで開発環境を整えられるサービス。本サイトはローカルの開発環境は一切使わず、このサービス上のみでコーディングした',
     },
+  ];
+
+  const servicesToDeploy = [
     {
       name: 'GitHub',
       url: 'https://github.com',
@@ -56,8 +60,20 @@ const Site: React.FC<PageProps> = ({ location }) => {
           <ExternalLink text="Gitpod" url="https://www.gitpod.io" />
           は無料ユーザーは月50時間しか使用できません）
         </p>
+        <h3>開発で使用したもの</h3>
+        JavaScriptフレームワーク・サイトジェネレータ・開発環境の確保手段
         <dl>
-          {data.map(({ name, url, description }) => (
+          {servicesToDevelop.map(({ name, url, description }) => (
+            <>
+              <dt>{url ? <ExternalLink text={name} url={url} /> : name}</dt>
+              <dd>{description}</dd>
+            </>
+          ))}
+        </dl>
+        <h3>デプロイ時に使用したもの</h3>
+        コード管理・サイト公開のために使用しているサービス
+        <dl>
+          {servicesToDeploy.map(({ name, url, description }) => (
             <>
               <dt>{url ? <ExternalLink text={name} url={url} /> : name}</dt>
               <dd>{description}</dd>
