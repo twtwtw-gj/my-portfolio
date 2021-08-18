@@ -13,7 +13,7 @@ const IndexPage = ({ location }) => (
     <Seo title="Home" />
     <h1>Hi people</h1>
     <a href="https://github.com/twtwtw-gj/" rel="noopener noreferrer">
-      <Avatar githubHandle="twtwtw-gj" />
+      <Avatar githubHandle="twtwtw-gj" alt="The GitHub avatar of twtwtw-gj" />
       <FontAwesomeIcon icon={faGithub} style={{ width: 24, height: 24 }} />
       Please check my works.
     </a>
