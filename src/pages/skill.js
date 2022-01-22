@@ -74,13 +74,16 @@ const SkillPage = ({
           { name: '数学基礎論' },
           {
             name: '自動定理証明・証明支援システム',
-            description: <>{ExternalLink({ text: 'jsCoq', url: 'https://coq.vercel.app/' })}を使ってCoq勉強中,</>,
+            description: <>{ExternalLink({ text: 'jsCoq', url: 'https://coq.vercel.app/' })}を使ってCoq勉強中</>,
           },
           {
             name: <ExternalLink text="kubernetes" url="https://kubernetes.io/" />,
             description:
               'マイクロサービスシステム自体には開発に携わったことがあったが、複数のサーバーを逐一置き換えるのは非常に煩雑だった。オーケストレーションの使用である程度デプロイ作業がラクになるのではと期待している',
           },
+          {
+            name: "Civictech"
+          }
         ]}
       />
       <dev>最終更新時刻: {DateTime.fromISO(buildTime).toFormat('yyyy/MM/dd HH:mm:ss z')}</dev>
