@@ -31,9 +31,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Yarn Upgrade
-        run: npm upgrade -g yarn@latest
-
       - name: Install
         run: yarn install
 
