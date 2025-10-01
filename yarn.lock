@@ -6513,7 +6513,7 @@ gatsby-worker@^2.15.0:
     fs-extra "^11.2.0"
     signal-exit "^3.0.7"
 
-gatsby@^5.13.7:
+gatsby@^5.15.0:
   version "5.15.0"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-5.15.0.tgz#1fdf11f3908530f436948ed6e06644e18c161e8a"
   integrity sha512-eqtq5S7AhS0SROTdOycOATYwT6GLYTcvpzZnzK2pFfhe3knLX0XJoSResUGGIj9kqfi8/kXEH29RU/2Lr7nPbw==
